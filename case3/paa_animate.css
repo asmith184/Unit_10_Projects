@@ -21,7 +21,11 @@
 
 /* Transition Effects */
 
-
+nav#gameLinks{
+   position: relative;
+   color: white;
+   
+}
 
 
 /* Sprite Styles */
