@@ -24,14 +24,45 @@
 nav#gameLinks{
    position: relative;
    color: white;
-   
+   transition: color 0.5s;
+   position: absolute;
+   top: 100%;
+   left: 0px;
+}
+
+nav#gameLinks a:hover{
+   color: rgb(255, 194, 99);
+}
+
+nav#gameLinks a::after{
+   content: "";
+   position: absolute;
+   width: 0%;
+   height: 8px;
+   background: linear-gradient(right, rgb(237, 243, 71), rgb(188, 74,0));
+   border-radius: 4px;
+   opacity: 0;
+   transition: opacity width 0.30s;
+}
+
+nav#gameLinks a:hover::after{
+   opacity: 1;
+   width: 100%;
 }
 
 
 /* Sprite Styles */
 
+div.sprite{
+   position: absolute;
+}
 
-
-
+/* div#bat{
+   width: 40px;
+   height: 50px;
+   top:100px;
+   left:-50px;
+   background-image: url(paa_bat.png) left center no-repeat;
+} */
 /* Animation Styles */
 
